@@ -5,3 +5,9 @@
 button {
   background-color: aquamarine;
 }
+
+img {
+  border-radius: 50%;
+  width: 30%;
+  box-shadow: 45px 80px 50px black;
+}
