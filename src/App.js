@@ -25,7 +25,7 @@ function App() {
       <h1>Github Profile Info:</h1>
       <h2>{gitHubName}</h2>
       {/* <input type='button' onClick={`window.location.herf='${gitHubUrl}'`} value='To Profile' /> */}
-      <button><a href={gitHubUrl} target='blank'>{gitHubName}</a></button>
+      <a href={gitHubUrl} target='blank'><button>link to {gitHubName}</button></a>
       <img src={gitHubImg} alt='pic' />
     </div>
   );

@@ -15,6 +15,6 @@ test("recevies GitHub name from Github", async () => {
 test("link to github profile", async () => {
     fetch.mockResponseOnce(JSON.stringify({html_url: "https://github.com/Augiedog"}))
     render(<App />)
-    const gitHubUrl = await waitFor(() => screen.getByRole('button'))
+    const gitHubUrl = await waitFor(() => screen.getByRole('link'))
     expect(gitHubUrl).toHaveTextContent('https://github.com/Augiedog')
 })
